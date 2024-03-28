@@ -1,0 +1,51 @@
+
+.slider-mobile
+  display: none
+  width: 100%
+  margin: 0 auto 0
+
+.slider-mobile__list
+  display: flex
+  flex-direction: column
+  width: 100%
+  margin: 0
+
+.slick-dots
+  bottom: -35px
+
+.list-dots
+  display: flex
+  align-items: center
+
+.slick-dots li button:before
+    color: #FFD43C
+    opacity: 1
+    font-size: 10px
+
+.slick-dots li.slick-active button:before
+    color: #F93326
+    opacity: 1
+    font-size: 15px
+
+@media screen and (max-width: 800px)
+  .slider-mobile
+    display: block
+    width: fit-content
+
+  .slider-mobile__list
+    width: 511px
+    
+  .slider-mobile__list_specialist
+    max-width: 325px
+
+@media screen and (max-width: 600px)
+  .slider-mobile__list
+    width: 411px
+
+@media screen and (max-width: 500px)
+  .slider-mobile__list
+    max-width: 331px
+
+@media screen and (max-width: 415px)
+  .slider-mobile__list
+    max-width: 256px

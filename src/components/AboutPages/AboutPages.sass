@@ -1,0 +1,167 @@
+@import "../../styles/@mixins"
+.aboutPages
+  padding-top: 42px
+  margin-bottom: 32px
+
+.aboutPages_status_preloader
+  min-height: 100vh
+  display: flex
+  align-items: center
+
+.aboutPage__text-block
+  margin-bottom: 128px
+
+.aboutPage__title
+  text-align: center
+  @include heading-h2
+  margin-top: 48px
+  margin-bottom: 44px
+  font-weight: 700
+
+.aboutPages__img
+  float: right
+  margin: 0 0 0 25px
+  border-radius: 10px
+
+.aboutPage__block-with-img
+  display: flex
+  gap: 25px
+
+.aboutPage__block-with-paragraphs
+  display: flex
+  flex-direction: column
+
+.aboutPages__img_type_about-page
+  border-radius: 10px
+  height: 340px
+
+.aboutPage__paragraph
+  @include text-16M
+  padding-bottom: 32px
+
+.aboutPages__paragraph_type_bold
+  font-weight: 700
+
+.aboutPage__paragraph_type_inder-img
+  max-width: 792px
+
+.aboutPage__list
+  list-style: disc inside
+  padding-left: 10px
+
+.aboutPage__list-numb
+  list-style: decimal inside
+  padding-left: 10px
+
+.aboutPage__block
+  display: flex
+  align-items: center
+  gap: 122px
+
+.about-page__cards
+  display: flex
+  flex-direction: column
+  gap: 120px
+  margin: 0 0 128px
+
+.aboutPage__btn-container
+  margin-top: 64px
+
+.aboutPage__counter_mobile
+  display: none
+
+.aboutPage__counter_not-mobile
+  float: right
+  margin: 90px 100px 20px 120px
+  width: 193px
+
+.aboutPage__slider-container
+  width: 511px
+
+@media screen and (max-width: 1250px)
+  .aboutPages
+    padding: 42px 20px 0
+  .about-page__cards
+    padding: 0 20px 0
+
+@media screen and (max-width: 1100px)
+  .aboutPages__img
+    float: none
+    margin: 24px auto
+    width: 100%
+
+  .aboutPages__img_type_about-page
+    width: 460px
+    height: 340px
+    object-fit: cover
+
+  .aboutPage__text-block
+    margin-bottom: 68px
+
+  .aboutPage__counter_not-mobile
+    float: right
+    margin: 0 50px 20px 95px
+
+@media screen and (max-width: 1000px)
+  .aboutPage__counter_not-mobile
+    margin-top: -80px
+
+@media screen and (max-width: 900px)
+  .aboutPages__header
+    display: flex
+    align-items: center
+  .aboutPages__header-title
+    width: 100%
+  .aboutPage__counter_not-mobile
+    margin-top: -150px
+
+@media screen and (max-width: 850px)
+  .aboutPage__block-with-img
+    flex-direction: column-reverse
+  .aboutPages__img_type_about-page
+    width: 100%
+    height: 450px
+  .aboutPage__counter_not-mobile
+    display: none
+  .aboutPage__counter_mobile
+    margin: 40px 0
+    display: flex
+    justify-content: center
+  .aboutPage__title
+    margin: 31px 0 27px
+
+@media screen and (max-width: 600px)
+  .aboutPages
+    padding: 42px 32px 0
+    margin-bottom: 64px
+
+  .aboutPages__img
+    float: none
+    margin: 24px auto
+
+  .aboutPage__paragraph
+    font-size: 14px
+    padding-bottom: 16px
+
+  .aboutPage__title
+    font-size: 24px
+
+  .aboutPages
+    padding-top: 0
+
+  .aboutPages__img_type_about-page
+    height: 340px
+    object-fit: cover
+    border-radius: 10px
+
+  .aboutPage__text-block_mobile
+    margin-bottom: 70px
+
+  .aboutPage__btn-container
+    margin-top: 14px
+
+  .aboutPages__btn-back-block
+    position: absolute
+    top: 86px
+
+

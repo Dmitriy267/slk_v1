@@ -1,0 +1,39 @@
+@import "../../styles/@mixins"
+
+.specialists
+  display: flex
+  flex-wrap: wrap
+  column-gap: 20px
+  row-gap: 64px
+  padding-bottom: 128px
+  padding-top: 68px
+  max-width: 1047px
+  width: 100%
+  justify-content: flex-start
+  column-gap: 147px
+  row-gap: 64px
+  margin: 0 auto 0
+  box-sizing: border-box
+
+@media screen and  (max-width: 1150px)
+  .specialists
+    column-gap: 20px
+    max-width: 940px
+
+@media screen and  (max-width: 999px)
+  .specialists
+    max-width: 790px
+
+@media screen and  (max-width: 900px)
+  .specialists
+    justify-content: space-between
+
+@media screen and  (max-width: 850px)
+  .specialists
+    max-width: 600px
+    margin: 0 auto
+    align-items: center
+    justify-content: center
+    gap: 40px
+    padding-top: 0
+    padding-bottom: 24px

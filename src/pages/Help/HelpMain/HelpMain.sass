@@ -1,0 +1,82 @@
+@import "../../../styles/@mixins"
+
+.help-main__section
+  margin-top: 42px
+  width: 100%
+  display: flex
+  flex-direction: column
+  gap: 40px
+  align-items: center
+
+.help-main__section_type_how
+  margin-bottom: 40px
+
+.help-main__btn-container
+  align-self: flex-start
+
+.help-main__title
+  @include heading-h2
+  color: #232323
+
+
+.help-main__how-buttons
+  display: flex
+  gap: 25px
+
+.help-main__section_type_projects
+  margin: 104px 0 162px
+
+.help-main__projects-container
+  display: flex
+  column-gap: 24px
+  row-gap: 24px
+  width: 100%
+  flex-wrap: wrap
+  justify-content: center
+
+.help-main__pagination
+  margin: 24px auto 120px
+
+@media screen and (max-width: 1250px)
+  .help-main__btn-container
+    padding-left: 30px
+
+@media screen and (max-width: 1050px)
+  .help-main__section_type_projects
+    margin-top: 118px
+
+@media screen and (max-width: 915px)
+  .help-main__section
+    padding: 0 31px
+
+  .help-main__help-block
+    padding: 0 31px
+
+  .help-main__btn-container
+    margin-left: 0
+    padding-left: 0
+
+@media screen and (max-width: 850px)
+  .help-main__btn-container
+    position: absolute
+
+@media screen and (max-width: 650px)
+  .help-main__how-buttons
+    flex-direction: column
+
+@media screen and (max-width: 850px)
+  .help-main__title
+    text-align: center
+
+@media screen and (max-width: 400px)
+  .help-main__title
+    @include heading-h3
+
+  .help-main__section_type_projects
+    gap: 24px
+
+  .help-main__section
+    gap: 24px
+
+  .help-main__section_type_projects
+    margin-top: 60px

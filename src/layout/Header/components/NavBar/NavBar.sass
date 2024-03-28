@@ -1,0 +1,48 @@
+@import '../../../../styles/@mixins'
+
+.nav
+  margin-right: 58px
+  margin-left: auto
+
+.nav__list
+  display: flex
+  position: relative
+  .nav__list-item
+    @include text-18
+    height: auto
+    border-bottom: 1px solid transparent
+    margin-right: 30px
+    transition: border-color .3s ease-in-out, color .3s ease-in-out
+
+  .nav__list-item:hover
+    border-color: #ff8227
+    color: #ff8227
+  .nav__list-item:active
+    color: #ff8227
+  .nav__list-item:focus
+    outline-offset: 5px
+    outline-color: #ff8227
+  .nav__list-item:focus-within
+    color: #ff8227
+  .nav__list-item:last-child
+    margin-right: 0
+
+  .nav-list__item-link
+    font-weight: 700
+
+  .nav__list-item_active
+    color: #ff8227
+
+@media screen and ( max-width: 1200px )
+  .nav
+    .nav__list
+      .nav__list-item
+        margin-right: 19px
+      .nav__list-item:last-child
+        margin-right: 0
+  .nav-list__item-link
+    font-size: 17px
+
+@media screen and ( max-width: 999px )
+  .nav
+    display: none

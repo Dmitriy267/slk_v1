@@ -1,0 +1,52 @@
+@import '../../../styles/@mixins'
+
+.accountMain
+  margin: 0px 0px
+  margin-bottom: 30px
+  height: 100%
+
+.accountMain__title
+  margin: 0px auto
+  margin-top: 48px
+  @include heading-h2
+  text-align: center
+  text-transform: uppercase
+
+.accountMain__how-buttons
+  margin: 40px auto
+  display: flex
+  justify-content: center
+  gap: 25px
+
+.accountMain__nav
+  margin: 0px
+  display: flex
+  justify-content: center
+  gap: 90px
+
+.accountMain__nav_li
+  list-style-type: none
+
+.accountMain__link
+  text-decoration: none
+  @include text-16B
+
+.accountMain__link:hover
+  color: #ff8227
+
+.accountMain__link-active
+  @include text-16B
+  color: #ff8227
+  text-decoration: none
+  padding-bottom: 2px
+  border-bottom: 3px solid #FF8227
+
+@media screen and (max-width: 600px)
+  .accountMain__how-buttons
+    flex-direction: column
+    align-items: center
+
+  .accountMain__nav
+    flex-direction: column
+    align-items: center
+    gap: 20px

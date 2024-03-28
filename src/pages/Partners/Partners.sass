@@ -1,0 +1,104 @@
+@import "../../styles/@mixins"
+
+.partners
+  margin: 0px 0px
+  height: 100%
+  position: relative
+
+.partners__buttonBack
+  margin: 0px
+  margin-top: 42px
+
+.partners__title
+  margin: 0px auto
+  margin-top: 48px
+  @include heading-h2
+  text-align: center
+  text-transform: uppercase
+  color: #232323
+
+.partners__subtitle
+  margin: 0px auto
+  margin-top: 44px
+  @include  text-16B
+
+.partners__text
+  margin: 0px auto
+  margin-top: 20px
+  @include text-14R
+
+.partners__contacts-container
+  margin: 0 0 60px
+  margin-top: 133px
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-template-rows: repeat(4, 1fr)
+  gap: 25px
+  justify-items: center
+
+.partners__img
+  width: 280px
+  height: 210px
+  border-radius: 8px
+
+.partners__pagination
+  margin: 0px auto
+  margin-top: 60px
+
+.partners__help-block
+  margin: 128px auto
+  width: 1200px
+  height: 275px
+
+@media screen and (max-width: 1250px)
+  .partners
+    margin: 0px 30px
+
+  .partners__help-block
+    margin: 128px auto
+    width: 100%
+
+  .partners__img
+    width: 220px
+    height: 160px
+
+  .partners__contacts-container
+    gap: 20px
+
+@media screen and (max-width: 1000px)
+  .partners__contacts-container
+    grid-template-columns: repeat(2, 1fr)
+
+  .partners__help-block
+    padding: 0 31px
+
+@media screen and (max-width: 850px)
+  .partners__buttonBack
+    position: absolute
+    top: -16px
+
+  .partners__title
+    margin: 24px auto
+
+  .partners__subtitle
+    margin-top: 0
+
+  .partners__help-block
+    margin-top: 60px
+
+
+
+@media screen and (max-width: 500px)
+  .partners__img
+    width: 118px
+    height: 90px
+
+  .partners__title
+    @include heading-h3
+
+  .partners__subtitle
+    @include  text-14B
+
+  .partners__contacts-container
+    margin-top: 30px
+

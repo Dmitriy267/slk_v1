@@ -1,0 +1,67 @@
+@import "../../styles/@mixins"
+.cartItem
+    padding-top: 42px
+    padding-bottom: 36px
+    border-top: 1px solid #71717A
+    margin: 0 30px
+
+.cartItem__wrapper
+    display: flex
+    width: 100%
+    position: relative
+    justify-content: center
+.cartItem:last-of-type
+    border-bottom: 1px solid #71717A
+
+.cartItem__about-item
+    padding-left: 24px
+    display: flex
+    flex-direction: column
+
+.cartItem__img-container
+    width: 282px
+    max-height: 244px
+    overflow: hidden
+
+.cartItem__img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    border-radius: 10%
+.cartItem__title
+    padding-bottom: 32px
+    @include text-18B
+
+.cartItem__description
+    max-width: 326px
+    @include text-16M
+.cartItem__price
+    @include heading-h2
+    font-weight: 700
+    color: #FF8227
+    margin-left: auto
+.cartItem__count
+    @include text-14B
+    margin-top: auto
+    color: #71717A
+
+@media  screen and ('max-width: 850px')
+    .cartItem__price
+        margin-left: 0
+        @include text-16B
+    .cartItem__count
+        padding-top: 6px
+        @include text-10
+
+    .cartItem__description
+        max-width: 326px
+        @include text-12
+        padding-bottom: 10px
+
+    .cartItem__title
+        padding-bottom: 1px
+        @include text-16B
+
+    .cartItem__img-container
+        max-width: 112px
+        max-height: 98px

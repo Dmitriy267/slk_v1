@@ -1,0 +1,114 @@
+@import '../../../styles/@mixins'
+
+.home__hero
+  display: flex
+  flex-direction: column
+  position: relative
+  max-width: 1200px
+  min-height: 487px
+  padding-bottom: 27px
+  padding-left: 30px
+  background-image: url('./assets/poster.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+
+.home__hero-overlay
+  background-color: rgba(0,0,0,0.4)
+  position: absolute
+  z-index: 1
+  width: 100%
+  height: 100%
+  left: 0
+
+.home__hero-container
+  display: flex
+  justify-content: space-between
+  margin-top: auto
+
+.home__hero-video
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  width: 100%
+  height: 100%
+  object-fit: cover
+  background-image: url('./assets/poster.jpg')
+  background-position: cover
+  background-size: 100% 100%
+
+.home__hero-wrapper
+  padding-bottom: 6px
+  padding-left: 47px
+  white-space: pre-line
+  align-self: flex-end
+
+.home__hero-title
+  @include heading-h1
+  position: relative
+  margin-bottom: 16px
+  line-height: 48px
+  text-transform: uppercase
+  z-index: 2
+  color: #fff
+  span
+    font-weight: 700
+    color: #ffd43c
+
+.button-wraper
+  z-index: 2
+  position: relative
+  width: fit-content
+  .button-with-star
+    @include heading-h3R
+    position: relative
+    border-right: none
+    padding-right: 19px
+    color: #f8f8f8
+    transition: color 0.4s ease-in-out
+  .button-with-star:hover
+    color: #ffd43c
+  .button-with-star:focus
+    outline-offset: 13px
+    outline-color: #ff8227
+    color: #ffd43c
+    transition: color 0.4s ease-in-out
+
+.home__hero-age
+  position: relative
+  padding-right: 34px
+  align-self: flex-end
+  z-index: 2
+
+@media screen and ( max-width: 1200px )
+  .home__hero
+    min-height: 477px
+
+  .home__hero-wrapper
+    padding-left: 0
+
+  .home__hero-age
+    padding-right: 30px
+
+@media screen and ( max-width: 480px )
+  .home__hero
+    min-height: 209px
+
+  .home__hero-title
+    span
+      display: none
+
+  .home__hero-wrapper
+    padding-bottom: 0
+    transform: translateY(18px)
+    z-index: 1
+
+  .button-wraper
+    .button-with-star
+      font-size: 18px
+      line-height: 16px
+      font-weight: 700
+      color: #ffd43c
+      text-transform: uppercase

@@ -1,0 +1,81 @@
+//Реквизиты
+@import "../../styles/@mixins"
+
+.requisites__container
+    display: flex
+    gap: 25px
+    max-width: 1200px
+    width: 100%
+    padding: 62px 132px
+    background: #F9FAFB
+    border: 3px solid #FF8227
+    border-radius: 10px
+
+.requisites__data-container
+    padding-right: 70px
+
+.requisites__title
+    padding-bottom: 10px
+    @include text-18
+    color: #F93326
+
+.requisites__item
+    @include text-16R
+    line-height: 21px
+
+.requisites__item-bold
+    padding-right: 5px
+
+.requisites__text-container
+    width: 50%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+.requisites__description
+    padding-bottom: 20px
+    @include heading-h3
+    text-align: center
+
+@media screen and (max-width: 1000px)
+    .requisites__container
+        max-width: 940px
+        padding: 62px 80px
+
+@media screen and (max-width: 700px)
+    .requisites__container
+        flex-direction: column
+        padding: 0
+        gap: 32px
+        border: none
+        background: transparent
+        border-radius: 0
+
+    .requisites__data-container
+        width: 100%
+        padding: 24px 23px
+        background: #F9FAFB
+        border: 3px solid #FF8227
+        border-radius: 10px
+
+    .requisites__title
+        padding-bottom: 26px
+
+    .requisites__item
+        @include text-14R
+
+    .requisites__text-container
+        width: 100%
+
+    .requisites__description
+        padding-bottom: 24px
+        @include text-18B
+
+@media screen and (max-width: 320px)
+    .requisites__container
+        max-width: 255px
+        margin: auto
+        padding: 44px 0 0 0
+
+

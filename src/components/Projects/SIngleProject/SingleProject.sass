@@ -1,0 +1,128 @@
+@import "../../../styles/@mixins"
+
+.single-project
+  display: flex
+  flex-direction: column
+  margin: 42px 0 128px
+  position: relative
+
+.single-project__header
+
+.single-project__title
+  @include heading-h2
+  margin: 48px auto 44px
+
+.single-project__article
+  margin-bottom: 128px
+
+.single-project__image
+  border-radius: 10px
+  float: right
+  margin: 0 0 25px 25px
+  width: 587px
+  height: 340px
+  object-fit: cover
+  position: relative
+
+.single-project__image_type_closed
+  filter: grayscale(100%)
+
+.single-project__image-container
+  position: relative
+
+.single-project__marker
+  position: absolute
+  background: #F93326
+  border-radius: 0px 10px 0px 10px
+  padding: 22px 0px 22px 16px
+  color: white
+  width: 149px
+  height: 10px
+  @include text-16B
+  display: none
+  align-items: center
+  right: 0
+
+.single-project__marker_type_showed
+  display: flex
+
+.single-project__paragraph
+  @include text-16R
+  margin-bottom: 20px
+
+.single-project__paragraph_type_header-bold
+  margin: 60px 0
+
+.single-project__paragraph_type_header-reg
+  @include heading-h2R
+  margin: 60px 0
+
+.single-project__another-projects
+  display: flex
+  gap: 25px
+
+.single-project__title_type_another
+  margin: 128px auto 60px
+
+@media screen and (max-width: 1200px)
+  .single-project
+    padding: 0 30px
+
+  .single-project__another-projects
+    justify-content: center
+
+@media screen and (max-width: 1040px)
+  .single-project__article
+    display: flex
+    flex-direction: column
+
+  .single-project__image
+    margin: 30px auto
+    width: 100%
+    height: 340px
+    object-fit: cover
+    object-position: top
+
+  .single-project__paragraph_type_bold
+    order: -1
+
+  .single-project__paragraph_type_high
+    order: -1
+
+  .single-project__marker
+    top: 30px
+
+@media screen and (max-width: 999px)
+  .single-project__another-projects
+    flex-direction: column
+    gap: 32px
+    align-items: center
+  .single-project__title_type_another
+    margin: 60px auto 24px
+
+@media screen and (max-width: 600px)
+  .single-project__header
+    position: absolute
+    top: 4px
+
+  .single-project__title
+    margin-top: 0
+
+@media screen and (max-width: 480px)
+  .single-project__title
+    max-width: 240px
+    margin: 24px auto
+    text-align: center
+
+  .single-project__header
+    top: 28px
+
+  .single-project
+    margin-bottom: 88px
+    margin-top: 0
+
+  .single-project__article
+    margin-bottom: 68px
+
+  .single-project__title_type_another
+    margin: 60px auto 24px

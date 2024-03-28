@@ -1,0 +1,77 @@
+.slider-images
+  position: relative
+  width: 503px
+  height: 405px
+
+.slider-images__list
+  padding-left: 54px
+  padding-right: 54px
+  min-width: 395px
+  height: 100%
+
+.slider-images__prev-arrow
+  position: absolute
+  background-image: url('../../assets/icons/next-arrow.svg')
+  transform: rotate(180deg)
+  background-size: 38px 38px
+  width: 38px
+  height: 38px
+  top: 45%
+  left: 0
+
+.slider-images__next-arrow
+  position: absolute
+  background-image: url('../../assets/icons/next-arrow.svg')
+  background-size: 38px 38px
+  width: 38px
+  height: 38px
+  top: 45%
+  right: 0
+
+.product-image-card
+  display: flex
+  width: 395px
+  height: 405px
+
+  position: relative
+  border-radius: 10px
+  overflow: hidden
+
+.product-image-card__img
+  object-fit: cover
+  width: 100%
+  height: 100%
+
+@media screen and (max-width: 1200px)
+  .slider-images 
+    width: 448px
+    height: 331px
+
+  .slider-images__list 
+    min-width: 340px
+    padding-right: 10px
+  
+  .product-image-card
+    width: 340px
+    height: 331px
+
+@media screen and (max-width: 320px)
+  .slider-images 
+    width: 256px
+    height: 250px
+
+  .product-image-card
+    width: 256px
+    height: 250px
+    
+  .slider-images__list 
+    min-width: 100%
+    padding: 0
+
+  .slider-images__prev-arrow
+    display: none
+
+  .slider-images__next-arrow
+    display: none
+      
+      

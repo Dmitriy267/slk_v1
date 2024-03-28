@@ -1,0 +1,127 @@
+.shop-main {
+  margin: 42px 0 128px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.shop-main__article {
+  margin-bottom: 120px;
+}
+
+.shop-main__title {
+  font-size: 30px;
+  line-height: 36px;
+  font-family: 'Exo2';
+  font-weight: 700;
+  margin: 48px auto 44px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.shop-main__main-foto {
+  float: right;
+  width: 587px;
+  height: 340px;
+  margin-left: 25px;
+  border-radius: 10px;
+}
+
+.shop-main__main-text {
+  font-size: 16px;
+  line-height: 21.82px;
+  font-family: 'Nunito';
+  font-weight: 400;
+}
+
+.shop-main__shop-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 31px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shop-main__pagination {
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 1260px) {
+  .shop-main {
+    margin: 42px 30px 128px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .shop-main__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .shop-main__main-foto {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 60px 0 0;
+    width: 100%;
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .shop-main__title {
+    margin: 30px auto 60px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .shop-main__article {
+    margin-bottom: 60px;
+  }
+  .shop-main__main-foto {
+    height: 300px;
+    margin: 24px 0 0;
+  }
+  .shop-main__title {
+    margin: 0 auto 24px;
+  }
+  .shop-main {
+    margin-top: 19px;
+  }
+  .shop-main__pagination {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .shop-main__top-block {
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .shop-main__title {
+    max-width: 220px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: 'Exo2';
+    font-weight: 700;
+  }
+}
+/*# sourceMappingURL=ShopMain.css.map */

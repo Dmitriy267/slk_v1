@@ -1,0 +1,54 @@
+@import '../../../../../styles/@mixins'
+
+.dropdown__btn
+  display: flex
+  position: relative
+  align-items: center
+  border-bottom: 1px solid transparent
+  margin-right: 30px
+  padding-bottom: 1px
+  transition: border-color .3s ease-in-out, color .3s ease-in-out
+  width: fit-content
+  svg
+    width: 10px
+    height: 6px
+    path
+      transition: fill .3s ease-in-out
+  .dropdown__arrow_opened
+    transform: rotate(180deg)
+  .dropdown__btn-title
+    @include text-18
+    padding-right: 5px
+    width: fit-content
+    transition: color .3s ease-in-out
+    color: rgba(113, 113, 122, 1)
+    font-weight: 700
+
+.dropdown__btn:hover
+    border-color: #ff8227
+.dropdown__btn:hover .dropdown__btn-title
+    color: #ff8227
+.dropdown__btn:hover svg path
+  fill: #ff8227
+.dropdown__btn:active
+  color: #ff8227
+.dropdown__btn:focus
+  outline-offset: 5px
+  outline-color: #ff8227
+.dropdown__btn:focus-within
+    color: #ff8227
+
+
+.dropdown__btn_status_main
+  .dropdown__btn-title
+    color: #fff
+  svg
+    path
+      transition: fill .3s ease-in-out
+      fill: #fff
+
+@media screen and ( max-width: 1200px )
+  .dropdown__btn
+    margin-right: 30px
+    .dropdown__btn-title
+      padding-right: 4px

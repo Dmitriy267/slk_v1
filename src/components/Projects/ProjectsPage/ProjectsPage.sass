@@ -1,0 +1,76 @@
+@import "../../../styles/@mixins"
+
+.projects-page
+  display: flex
+  flex-direction: column
+  align-self: center
+  font-size: 30px
+  height: 100%
+  flex-grow: 1
+  margin-top: 42px
+  width:100%
+  &__title
+    display: flex
+    padding-top: 48px
+    padding-bottom: 60px
+    font-family: 'Exo2'
+    font-style: normal
+    font-weight: 700
+    font-size: 30px
+    line-height: 36px
+    text-transform: uppercase
+    font-feature-settings: 'pnum' on, 'lnum' on
+    color: #232323
+    justify-content: center
+
+.container
+  max-width: 1200px
+  margin: 0 auto
+  padding: 0
+  box-sizing: border-box
+  @media (max-width:1200px)
+    max-width: 1140px
+    padding: 0 30px
+  @media (max-width:760px)
+    max-width: 760px
+    padding: 0 32px
+  @media (max-width:320px)
+    max-width: 320px
+.pagination
+  justify-content: center
+
+.project__items
+  width: fit-content
+  margin: 0 auto
+
+// .help-main__projects-container
+//   justify-content: flex-start
+//   @media (max-width:1200px)
+//     row-gap: 20px
+//     column-gap: 20px
+//     max-width: 940px
+//   @media (max-width:1000px)
+//     max-width: 620px
+//   @media (max-width:700px)
+//     max-width: 300px
+
+
+@media screen and (max-width: 1200px)
+  .project-page__top-block
+    padding-left: 30px
+
+
+@media screen and (max-width: 700px)
+  .projects-page__title
+    padding-top: 0
+    padding-bottom: 0
+
+  .project-page__top-block
+    position: absolute
+
+  .projects-page
+    padding-top: 24px
+
+  .project__items
+    padding-top: 24px
+

@@ -1,0 +1,75 @@
+@import "../../styles/@mixins"
+
+.donation__choice-button
+  background: #FF8227
+  border-radius: 8px
+  border: none
+  height: 50px
+  width: auto
+  color: white
+  transition: 0.3s
+  font-weight: 700
+  font-size: 18px
+  line-height: 22px
+  padding: 0 10px 0
+  white-space: nowrap
+  box-sizing: border-box
+
+.donation__choice-button:hover
+  background: #F93326
+  color: white
+
+.donation__choice-button:disabled
+  background: #ABABAB
+
+.donation__choice-button:disabled:hover
+  background: #ABABAB
+
+.donation__choice-containter
+  display: flex
+  flex-direction: column
+  gap: 10px
+  position: relative
+
+.donation__description
+  align-self: center
+  font-size: 18px
+
+.donation__amount_text
+  align-self: center
+  color: rgb(255, 130, 39)
+  font-weight: 700
+  font-size: 25px
+  line-height: 36px
+  font-style: normal
+
+.donation__donation_input_form
+  align-self: center
+  // max-width: 256px
+  width: 100%
+  color: rgb(255, 130, 39)
+  font-weight: 700
+  font-size: 25px
+  line-height: 36px
+  font-style: normal
+  text-align: center
+  border-radius: 5px
+  border: 1px solid #71717A
+  height: 50px
+  margin-bottom: 15px
+
+.donation__error
+  color: #F93326
+  position: absolute
+  top: 130px
+  text-align: center
+  width: 100%
+  font-size: 14px
+
+.donation__error-phone
+  color: #F93326
+  position: absolute
+  top: 205px
+  text-align: center
+  width: 100%
+  font-size: 14px

@@ -1,0 +1,28 @@
+@import "../../styles/@mixins"
+
+.modal__container 
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  margin: auto
+  padding: 20px
+  z-index: 30
+  width: 320px
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  border: 1px solid black
+  border-radius: 8px
+  background-color: white
+
+.modal__heading 
+  display: flex
+  justify-content: space-between
+
+.closeIconContainer
+  margin-left: auto
+
+@media screen and (max-width: 320px)
+  .modal__container 
+    width: 280px

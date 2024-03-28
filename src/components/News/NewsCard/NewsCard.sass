@@ -1,0 +1,51 @@
+@import "../../../styles/@mixins"
+.newsCard
+    max-width: 331px
+    position: relative
+
+.newsCard__img
+    width: 100%
+    border-top-left-radius: 10px
+    border-top-right-radius: 10px
+    height: 220px
+    object-fit: cover
+
+.newsCard__text-block
+    background: #F9FAFB
+    border-radius: 10px
+    padding: 16px 25px 32px
+
+.newsCard__title
+    @include text-16B
+    display: -webkit-box
+    -webkit-line-clamp: 2
+    -webkit-box-orient: vertical
+    overflow: hidden
+    color: #232323
+
+.newsCard__paragraph
+    padding: 10px 0 0
+    @include text-14R
+    display: -webkit-box
+    -webkit-line-clamp: 4
+    -webkit-box-orient: vertical
+    overflow: hidden
+    height: 90px
+    margin-bottom: 24px
+    color: #232323
+
+.newsCard__footer
+    display: flex
+    justify-content: space-between
+    flex-direction: row
+    @include text-16M
+    color: #232323
+
+.newsCard__date
+    @include text-10
+    padding-top: 6px
+    color: #232323
+
+.newsCard__button
+    color: #FF8227
+    border-bottom: 1px solid #FFD43C

@@ -1,0 +1,84 @@
+@import "../../styles/@mixins"
+
+.documents
+    display: flex
+    justify-content: space-between
+    margin-top: 32px
+
+.documents__item
+    width: 182px
+    height: 168px
+    border: 3px solid #FF8227
+    border-radius: 8px
+    background-color: #F9FAFB
+.documents__item-content
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 100%
+    padding: 25px 21px
+
+.documents__text
+    @include text-14B
+
+.documents__button
+    text-align: center
+    color: #F93326
+    @include text-16B
+
+.documents__download
+    display: flex
+    justify-content: center
+    cursor: pointer
+
+.documents__button-download
+    background-image: url('../../assets/icons/downloadIcon.png')
+    background-position: center
+    background-repeat: no-repeat
+    padding-right: 30px
+    box-sizing: border-box
+
+.documents__help-button
+    margin-top: 44px
+    text-align: center
+
+@media screen and (max-width: 950px)
+    .documents
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin: 32px
+        border: 3px solid #FF8227
+        border-radius: 8px
+        max-height: 314px
+        padding-bottom: 23px
+        background-color: #F9FAFB
+
+    .documents__item-content
+        flex-direction: row
+        align-items: center
+        padding: 23px 22px 0
+
+    .documents__item
+        width: 100%
+        height: 168px
+        border: none
+        background-color: transparent
+
+    .documents__button
+        display: none
+
+    .documents__download
+        height: 24px
+
+@media screen and (max-width: 415px)
+  .documents
+    max-height: 314px
+    margin: 32px 0 32px
+    // height: 314px
+
+  .documents__item-content
+    padding: 25px 22px 0
+
+  .documents__item
+    height: fit-content

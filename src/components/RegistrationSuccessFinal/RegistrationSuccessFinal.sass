@@ -1,0 +1,29 @@
+@import "../../styles/@mixins"
+
+.registrationSuccess
+    position: fixed
+    z-index: 100
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background-color: rgba(113, 113, 122, 0.8)
+
+.registrationSuccess__form
+    max-width: 792px
+    margin: auto
+    margin-top: 101px
+    padding: 96px 57px 102px 102px
+    display: flex
+    align-items: center
+    border-radius: 10px
+    border: 3px solid #1CB459
+    background-color: #F9FAFB
+    text-align: center
+
+.registrationSuccess__img 
+    margin-right: 70px
+
+.registrationSuccess__title
+    @include text-18B
+    padding-bottom: 24px

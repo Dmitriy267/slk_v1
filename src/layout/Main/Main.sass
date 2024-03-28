@@ -1,0 +1,16 @@
+.main
+  width: 100%
+  min-width: 320px
+  max-width: 1200px
+  margin: 0 auto auto
+  display: flex
+  flex-direction: column
+
+@media screen and (max-width: 1300px)
+  .main
+    // ! Ломает компонент Hero
+    // padding: 0 32px 0
+
+@media (max-width: 1200px)
+  .main
+    max-width: 100%

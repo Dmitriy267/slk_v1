@@ -1,0 +1,165 @@
+@import "../../../styles/@mixins"
+
+.single-fundrising
+  margin-bottom: 128px
+
+.single-fundrising__top-block
+  margin: 42px 0
+
+.single-fundrising__proper-fundrising
+  width: 100%
+  min-height: 846px
+  background: #F9FAFB
+  border-radius: 10px
+  padding: 60px 120px
+  box-sizing: border-box
+
+.single-fundrising__info
+  margin-bottom: 128px
+
+.single-fundrising__img-container
+  float: right
+  margin: 0 0 0 77px
+  border-radius: 10px
+  width: 331px
+  height: 313px
+  position: relative
+  overflow: hidden
+  display: flex
+
+.single-fundrising__img
+  width: 100%
+  object-fit: contain
+
+.single-fundrising__title
+  @include heading-h2
+  display: -webkit-box
+  -webkit-line-clamp: 3
+  -webkit-box-orient: vertical
+  overflow: hidden
+  margin-bottom: 24px
+
+.single-fundrising__description
+  @include heading-h3R
+  // display: -webkit-box
+  // -webkit-line-clamp: 10
+  // -webkit-box-orient: vertical
+  // overflow: hidden
+
+.single-fundrising__btn-container
+  text-align: center
+  margin-top: 64px
+
+.single-fundrising__support
+  align-self: flex-start
+  margin-top: 60px
+  @include text-16R
+
+.single-fundrising__support_status_hidden
+  visibility: hidden
+
+.single-fundrising__support-us
+  @include text-16B
+
+.single-fundrising__support-else
+  @include text-16R
+  color: rgba(255, 130, 39, 1)
+
+.single-fundrising__support-else:hover
+  cursor: pointer
+
+.single-fundrising__support-others
+  @include text-16R
+
+.single-fundrising__support-others:hover
+  cursor: pointer
+
+.single-fundrising__others-title
+  @include heading-h2
+  margin: 128px auto 69px
+  width: fit-content
+
+.single-fundrising__others-container
+  display: flex
+  justify-content: center
+
+@media screen and  (max-width: 1280px)
+  .single-fundrising
+    margin: 0 30px 128px
+
+  .single-fundrising__proper-fundrising
+    padding: 60px 80px
+    min-height: 726px
+
+  .single-fundrising__img-container
+    width: 300px
+    height: 283px
+    margin: 0 0 0 50px
+
+  .single-fundrising__description
+    @include text-16M
+
+  .single-fundrising__others-container
+    gap: 32px
+
+@media screen and  (max-width: 900px)
+  .single-fundrising__img
+    width: 256px
+    height: 241px
+
+@media screen and  (max-width: 770px)
+  .single-fundrising__info
+    display: flex
+    flex-direction: column
+    margin-bottom: 40px
+
+  .single-fundrising__img-container
+    margin: 22px 0 0
+    float: none
+    order: 3
+    align-self: center
+
+@media screen and  (max-width: 705px)
+  .single-fundrising__others-title
+    text-align: center
+    margin: 60px 0 22px
+
+@media screen and  (max-width: 600px)
+  .single-fundrising__proper-fundrising
+    padding: 30px 32px
+
+  .single-fundrising__others-container
+    flex-direction: column
+
+@media screen and  (max-width: 500px)
+  .single-fundrising__proper-fundrising
+    padding: 22px 32px
+
+  .single-fundrising__title
+    text-align: center
+    @include text-18B
+
+  .single-fundrising__description
+    @include text-16R
+
+  .single-fundrising
+    margin: 24px 0 88px
+
+  .single-fundrising__top-block
+    margin: 0 32px 60px
+
+  .single-fundrising__btn-container
+    margin-top: 26px
+
+  .single-fundrising__support
+    margin-top: 22px
+
+  .single-fundrising__others-container
+    padding: 22px 32px
+    background: #F8F8F8
+
+  .single-fundrising__others-title
+    @include text-18B
+    align-self: center
+    margin: 60px auto 22px
+    padding: 0 32px

@@ -1,0 +1,108 @@
+@import "../../styles/@mixins"
+
+.fund-card
+  padding: 32px 32px 0 32px
+  display: flex
+  width: 511px
+  height: 100%
+  flex-direction: column
+  align-items: center
+  margin: 0
+  box-sizing: border-box
+
+.fund-card_help-page
+  padding: 33.06px 36.82px 34.12px
+  width: 588px
+  min-height: 684px
+
+.fund-card__content
+  width: 100%
+  height: 260px
+  position: relative
+  border-radius: 10px
+  overflow: hidden
+
+.fund-card__content_help-page
+  height: 268.64px
+
+.fund-card__img
+  width: 100%
+  object-position: center
+
+.fund-card__title-block
+  height: 66px
+  width: 100%
+  background: #FFD43C
+  position: absolute
+  bottom: 0
+  display: flex
+  align-items: center
+  padding: 0 12px 0 16px
+
+.fund-card__title
+  @include text-16B
+  display: -webkit-box
+  -webkit-line-clamp: 2
+  -webkit-box-orient: vertical
+  overflow: hidden
+
+.fund-card__description
+  @include text-14R
+  margin: 24px 0 18px
+  height: 76px
+  display: -webkit-box
+  -webkit-line-clamp: 4
+  -webkit-box-orient: vertical
+  overflow: hidden
+
+.fund-card__details-btn
+  @include text-16M
+  color: #FF8227
+  border-bottom: 1px solid #FFD43C
+  width: 86px
+  margin-bottom: 24px
+  align-self: flex-start
+
+.fund-card__support
+  align-self: flex-start
+  margin-top: 25px
+  @include text-14R
+
+.fund-card__support_status_hidden
+  visibility: hidden
+
+.fund-card__support-us
+  @include text-14B
+
+.fund-card__support-else
+  color: rgba(255, 130, 39, 1)
+
+.fund-card__support-else:hover
+  cursor: pointer
+
+.fund-card__support-others:hover
+  cursor: pointer
+
+@media screen and (max-width: 1100px)
+  .fund-card
+    padding: 32px
+
+  .fund-card_help-page
+    width: 447px
+    padding: 22px 0 34px
+    min-height: 696px
+
+  .fund-card__support
+    max-width: 80%
+
+@media screen and (max-width: 600px)
+  .fund-card
+    width: 100%
+    padding: 0 8px 19px
+    height: fit-content
+
+@media screen and (max-width: 415px)
+  .fund-card__details-btn
+    margin-bottom: 18px
+
+

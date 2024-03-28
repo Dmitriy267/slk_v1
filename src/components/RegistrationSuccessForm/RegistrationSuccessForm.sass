@@ -1,0 +1,60 @@
+@import "../../styles/@mixins"
+
+.registrationSuccessForm
+    max-width: 996px
+    margin: auto
+    padding: 40px 105px 90px 105px
+    border-radius: 10px
+    background-color: #F9FAFB
+    text-align: center
+
+.registrationSuccessForm__title
+    @include heading-h2
+    text-transform: uppercase
+    padding-bottom: 65px
+
+.registrationSuccessForm__content 
+    margin-bottom: 44px
+
+.registrationSuccessForm__text
+    @include text-16B
+    text-align: left
+
+.registrationSuccessForm__label
+    position: relative
+    max-width: 387px
+    margin: 0 auto 19px
+    display: flex
+    flex-direction: column
+    align-items: start
+
+.registrationSuccessForm__input
+    width: 100%
+    height: 46px
+    margin: 0
+    margin-top: 6px
+    border: 1px solid #71717A
+    border-radius: 5px
+    background: transparent
+    padding-left: 15px
+
+.registrationSuccessForm__text-mail
+    padding-bottom: 6px
+    text-align: left
+    @include text-16B
+
+.registrationSuccessForm__text-error
+    color: red
+    @include text-10
+    position: absolute
+    bottom: -15px
+
+.registrationSuccessForm__button 
+    padding-bottom: 19px
+
+.registrationSuccessForm__timer
+    @include text-14R
+    color: #71717A
+    
+
+    

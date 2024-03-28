@@ -1,0 +1,227 @@
+@import "../../../styles/@mixins"
+
+.vol__section
+  margin: 0 auto
+  margin-top: 40px
+  margin-bottom: 128px
+  width: 100%
+
+.vol__block-title
+  margin: 0
+  display: flex
+  gap: 30px
+  flex-direction: column
+
+.vol__title
+  @include heading-h2
+  text-align: center
+
+.vol__button-backward
+  width: 73px
+  height: 38px
+  background: #FF8227
+  border-radius: 8px
+  padding: 10px
+  color: #FFFFFF
+  font-family: 'Nunito'
+  font-style: normal
+  font-weight: 500
+  font-size: 18px
+  line-height: 22px
+
+.vol__form
+  display: flex
+  column-gap: 30px
+  row-gap: 30px
+  background: #F9FAFB
+  border-radius: 10px
+  flex-wrap: wrap
+  margin: 0 auto
+  margin-bottom: 50px
+  margin-top: 44px
+  padding: 30px
+  width: 996px
+
+.vol__label
+  display: flex
+  flex-direction: column
+  font-family: 'Nunito'
+  font-style: normal
+  font-weight: 500
+  font-size: 16px
+  line-height: 22px
+  color: #232323
+  white-space: nowrap
+  position: relative
+
+.vol__label_required
+  color: #F93326
+  white-space: nowrap
+
+.vol__input
+  width: 292px
+  height: 46px
+  margin: 0
+  margin-top: 6px
+  border: 1px solid #71717A
+  border-radius: 5px
+  background: transparent
+  padding-left: 15px
+
+.vol__input_type_middle
+  width: 453px
+
+.vol__input_type_big
+  width: 614px
+  padding: 0px 1px
+
+// .vol__input_type_big:hover
+//   background-color: #FFD43C
+//   outline: none
+
+.vol__form__option
+  font-family: 'Nunito'
+  font-style: normal
+  font-weight: 500
+  font-size: 16px
+  line-height: 22px
+  color: #232323
+  background: transparent
+
+.vol__text-error
+  color: red
+  @include text-10
+  position: absolute
+  bottom: -15px
+
+.vol__form__submit
+  display: flex
+  width: 100%
+  justify-content: space-between
+
+.vol__form__text
+  width: 580px
+  font-family: 'Nunito'
+  font-style: normal
+  font-weight: 500
+  font-size: 16px
+  line-height: 22px
+  font-feature-settings: 'pnum' on, 'lnum' on
+  color: #232323
+
+.vol__button-submit
+  width: 113px
+  height: 38px
+  background: #FF8227
+  border-radius: 8px
+  padding: 10px
+  color: #FFFFFF
+  font-family: 'Nunito'
+  font-style: normal
+  font-weight: 500
+  font-size: 16px
+  line-height: 22px
+
+.vol__button-submit:disabled
+  background: #ABABAB
+
+.vol__button-submit:hover
+  background: red
+
+.vol__button-submit:disabled:hover
+  background: #ABABAB
+
+.vol__form__link
+  text-decoration: underline
+  font-family: 'Nunito'
+  font-style: normal
+  font-weight: 500
+  font-size: 16px
+  line-height: 22px
+  color: #232323
+
+@media screen and (max-width: 1200px)
+  .vol__block-title-btn
+    padding-left: 30px
+
+@media screen and (max-width: 1000px)
+  .vol__form
+    width: 100%
+
+  .vol__block-title
+    flex-direction: column
+    column-gap: 0px
+    row-gap: 30px
+
+@media screen and (max-width: 900px)
+  .vol__form
+    justify-content: space-around
+
+  .vol__input_type_middle
+    width: 292px
+
+  .vol__input_type_big
+    width: 292px
+
+@media screen and (max-width: 700px)
+  .vol__input_type_big
+    width: 453px
+
+  .vol__input
+    width: 453px
+
+  .vol__form__text
+    width: 450px
+
+  .vol__block-title-btn
+    position: absolute
+
+  .vol__title
+    max-width: 70%
+    margin-left: auto
+    margin-right: auto
+
+@media screen and (max-width: 600px)
+  .vol__form__submit
+    flex-direction: column
+    row-gap: 35px
+    align-items: center
+
+  .vol__form__text
+    width: 100%
+
+  .vol__button-submit
+    width: 210px
+
+@media screen and (max-width: 415px)
+  .vol__title
+    font-size: 24px
+    max-width: 65%
+
+  .vol__input_type_middle
+    width: 257px
+
+  .vol__input_type_big
+    width: 257px
+
+  .vol__input
+    width: 257px
+
+  .vol__form
+    margin-top: 60px
+
+  .vol__block-title
+    flex-direction: row
+    column-gap: 0px
+    row-gap: 30px
+
+
+  // .vol__button-backward
+  //   width: 30px
+  //   height: 30px
+  //   padding: 0px
+  //   margin-left: 30px
+  //   background-image: url('../../../assets/icons/arrow-left.svg')
+  //   background-size: 18px 15px
+  //   background-position: center
+  //   background-repeat: no-repeat

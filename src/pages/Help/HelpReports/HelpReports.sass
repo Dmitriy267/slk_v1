@@ -1,0 +1,204 @@
+@import "../../../styles/@mixins"
+.helpreports__container
+  position: relative
+  max-width: 1200px
+  magrin: 0 auto
+  @media (max-width:1000px)
+    max-width: 1000px
+    padding: 0
+  @media (max-width:320px)
+    max-width: 320px
+    padding: 0
+.helpreports
+  margin-top: 42px
+  padding-bottom: 150px
+  @media(max-width:1270px)
+    margin-left: 30px
+    margin-right: 30px
+
+  @media(max-width:1000px)
+    padding-bottom: 128px
+    margin-top: 30px
+  @media(max-width:500px)
+    padding-bottom: 88px
+    margin-left: 32px
+    margin-right: 32px
+
+  &__header
+    font-family: 'Exo2'
+    font-style: normal
+    font-weight: 700
+    font-size: 30px
+    line-height: 36px
+    text-align: center
+    text-transform: uppercase
+    font-feature-settings: 'pnum' on, 'lnum' on
+    color: #232323
+    padding: 40px 0
+    @media (max-width:1000px)
+      padding-top: 30px
+      transform: translateX(-9px)
+    @media (max-width:500px)
+      padding-top: 24px
+      font-size: 24px
+      text-transform: capitalize
+      transform: none
+  &__content
+    background: #F9FAFB
+    border-radius: 10px
+    @media (max-width:1000px)
+  &__line
+    display: flex
+    justify-content: start
+    min-height: 74px
+    gap: 15px
+    @media (max-width:1000px)
+      gap: 0
+    @media (max-width:320px)
+      flex-wrap: wrap
+      flex-direction: column
+      max-height: 85px
+      min-height: 69px
+      padding: 8px 0 24px 12px
+  &__line:not(:last-child)
+    border-bottom: 1px solid #71717A
+
+  &__date
+    font-family: 'Nunito'
+    font-style: normal
+    font-weight: 700
+    font-size: 16px
+    line-height: 22px
+    display: flex
+    align-items: center
+    flex-grow: 0
+    font-feature-settings: 'pnum' on, 'lnum' on
+    color: #000000
+    width: 120px
+
+  &__size
+    font-family: 'Nunito'
+    font-style: normal
+    font-weight: 500
+    font-size: 12px
+    line-height: 16px
+    display: flex
+    // flex-grow: 2
+    align-items: center
+    font-feature-settings: 'pnum' on, 'lnum' on
+    color: #000000
+
+  &__actions
+    padding: 0 68px
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-grow: 0
+    margin-left: auto
+    @media (max-width:1000px)
+      padding: 0 45px
+    @media(max-width:500px)
+      padding: 0
+      padding-right: 16px
+      align-items: flex-start
+      padding-top: 8px
+
+  &__btn
+    display: flex
+    justify-content: start
+    padding: 24px 45.45px
+    gap: 67px
+    @media (max-width:1000px)
+      padding: 27px 30px 25px
+      justify-content: center
+    @media (max-width:900px)
+      gap: 50px
+    @media (max-width:800px)
+      gap: 10px
+      justify-content: space-between
+    @media (max-width:750px)
+      gap: 16px
+      padding: 5px 36px 16px
+      justify-content: start
+      overflow: auto
+
+  &__repcontent
+    @media (max-width:500px)
+      padding-top: 5px
+
+  .helpreports__actions>.button-main
+    @media (max-width:320px)
+      height: 38px !important
+
+.helpreports__date-and-size
+  display: flex
+  margin-left: 45.45px
+  gap: 66px
+  @media(max-width:1000px)
+    margin-left: 35.61px
+    gap: 26px
+  @media(max-width:500px)
+    flex-direction: column
+    margin-left: 16px
+    margin-top: 8px
+    gap: 0
+
+-webkit-scrollbar-track
+    background: #FF8227
+
+.helpreports__btn-report
+  font-style: normal
+  font-weight: 700
+  font-size: 18px
+  line-height: 22px
+  color: #71717A
+  transition: 0.3s
+  height: 22px
+  white-space: nowrap
+
+.helpreports__btn-report:hover
+  color: #FF8227
+  border-bottom: 1px solid #FF8227
+
+.helpreports__btn-report_type_active
+  color: #FF8227
+
+.helpreports__btn-report_type_active:hover
+  border-bottom: none
+
+.helpreports__line-empty
+  font-style: normal
+  font-weight: 400
+  font-size: 18px
+  line-height: 22px
+  display: flex
+  align-items: center
+  margin: 0 auto
+
+.helpreports__download
+  font-style: normal
+  font-weight: 600
+  font-size: 18px
+  line-height: 100%
+  color: #FF8227
+  border: 2px solid #FF8227
+  border-radius: 8px
+  width: 90px
+  height: 38px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.helpreports__download:hover
+  color: #F93326
+  border: 2px solid #F93326
+
+@media screen and (max-width: 850px)
+  .helpreports__btn-container
+    position: absolute
+    top: 32px
+    z-index: 2
+
+@media screen and (max-width: 850px)
+  .helpreports__btn-container
+    top: 27px

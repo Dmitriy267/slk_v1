@@ -1,0 +1,109 @@
+@import "../../styles/@mixins"
+.current__donation-containter
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 10px
+  position: relative
+
+.current__description
+  align-self: center
+  font-size: 18px
+  text-align: center
+
+.current__input-block
+  display: flex
+  width: 100%
+  color: rgb(255, 130, 39)
+  font-weight: 700
+  font-size: 28px
+  justify-content: center
+  position: relative
+  margin-bottom: 15px
+
+.current__donation_input_form_amount
+  width: 100%
+  text-align: center
+  // border-bottom: 1px solid #F93326
+  color: rgb(255, 130, 39)
+  font-weight: 700
+  font-size: 28px
+  border-radius: 5px
+  border: 1px solid #71717A
+  height: 50px
+
+.current__donation_input_form_currency
+  position: absolute
+  right: 5px
+  top: 9px
+  color: rgb(255, 130, 39)
+  font-weight: 700
+  font-size: 28px
+
+.current__donation_input_form
+  align-self: center
+  // max-width: 256px
+  width: 100%
+  color: rgb(255, 130, 39)
+  font-weight: 700
+  font-size: 25px
+  line-height: 36px
+  font-style: normal
+  text-align: center
+  border-radius: 5px
+  border: 1px solid #71717A
+  height: 50px
+  margin-bottom: 15px
+
+.current__inputs
+  position: relative
+  display: flex
+  flex-direction: column
+  gap: 10px
+
+.current__donation-submit
+  background: #FF8227
+  border-radius: 8px
+  border: none
+  height: 50px
+  color: rgba(255, 255, 255, 1)
+  transition: background 0.3s ease-in-out
+  font-weight: 700
+  font-size: 18px
+  line-height: 22px
+  padding: 0 10px 0
+  width: 100%
+
+.current__donation-submit:hover
+  background: rgba(249, 51, 38, 1)
+
+.current__donation-submit:disabled
+  background: #ABABAB
+
+.current__donation-submit:disabled:hover
+  background: #ABABAB
+
+.current__error-amount
+  color: #F93326
+  position: absolute
+  text-align: center
+  width: 100%
+  top: 53px
+  font-size: 14px
+
+.current__error-name
+  color: #F93326
+  position: absolute
+  text-align: center
+  width: 100%
+  top: 128px
+  font-size: 14px
+
+.current__error-phone
+  color: #F93326
+  position: absolute
+  text-align: center
+  width: 100%
+  top: 203px
+  font-size: 14px
+

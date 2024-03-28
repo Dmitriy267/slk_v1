@@ -1,0 +1,44 @@
+.shop-grid__success-grid
+  display: grid
+  grid-template-columns: 331px 331px 331px
+  grid-template-rows: repeat(3, 162px)
+  grid-column-gap: 39px
+  grid-row-gap: 12px
+  grid-template-areas: "item1 item2 item3" "item1 item2 item4" "item1 item2 item5"
+  grid-auto-rows: 0
+  grid-auto-columns: 0
+  align-self: center
+
+.shop-grid__success-grid_type_reverse
+  grid-template-areas: "item3 item2 item1" "item4 item2 item1" "item5 item2 item1"
+  grid-auto-rows: 0
+  grid-auto-columns: 0
+
+@media screen and (max-width: 1100px)
+  .shop-grid__success-grid
+    grid-template-columns: 300px 300px 300px
+    grid-template-rows: repeat(3, 142px)
+    grid-column-gap: 20px
+    grid-row-gap: 20px
+    grid-auto-rows: 0
+    grid-auto-columns: 0
+
+@media screen and (max-width: 990px)
+  .shop-grid__success-grid
+    grid-template-columns: 300px 300px
+    grid-template-rows: 469px 142px
+    grid-template-areas: "item1 item2" "item3 item4"
+
+@media screen and (max-width: 680px)
+  .shop-grid__success-grid
+    grid-template-columns: 300px
+    grid-template-rows: 469px 142px 142px
+    grid-template-areas: "item1" "item2" "item3"
+
+@media screen and (max-width: 500px)
+  .shop-grid__success-grid
+    grid-template-columns: 1fr
+    grid-template-rows: 384px 120px 120px
+
+
+

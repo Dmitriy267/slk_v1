@@ -1,0 +1,37 @@
+@import './@normalize.sass'
+@import './@fonts'
+@import "slick-carousel/slick/slick.css"
+@import "slick-carousel/slick/slick-theme.css"
+@import "react-tooltip/dist/react-tooltip.css"
+
+:root
+  --black: #232323
+  --white: #f8f8f8
+  --grey-1: #f9fafb
+  --grey-2:  #71717a
+  --orange: #ff8227
+  --red: #f93326
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: "Exo2", sans-serif
+  font-style: normal
+  font-weight: 400
+  color: #232323
+
+.App
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+  height: 100%
+
+.visually-hidden
+  clip: rect(0 0 0 0)
+  clip-path: inset(50%)
+  height: 1px
+  overflow: hidden
+  position: absolute
+  white-space: nowrap
+  width: 1px

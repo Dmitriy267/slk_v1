@@ -1,0 +1,89 @@
+@import "../../styles/@mixins"
+
+.emailChangeModal
+  position: fixed
+  width: 100vw
+  height: 100vh
+  top: 0
+  left: 0
+  background: rgba(113, 113, 122, 0.6)
+  z-index: 1000
+  display: none
+
+.emailChangeModal_status_opened
+  display: flex
+
+.emailChangeModal__modal
+  max-width: 996px
+  max-height: 501px
+  display: flex
+  background: #F9FAFB
+  border-radius: 10px
+  margin: 181px auto 0
+  display: flex
+  gap: 25px
+  align-items: center
+  justify-content: center
+
+
+
+.emailChangeModal__text-content
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 100%
+
+.emailChangeModal__title
+  @include heading-h2R
+  font-weight: 700
+  margin-bottom: 65px
+  text-transform: uppercase
+
+.emailChangeModal__subtitle
+  @include text-16B
+  margin: 0px 100px
+  white-space: pre
+  margin-bottom: 44px
+
+.emailChange__form
+  margin: 30px auto
+  max-width: 385px
+  width: 100%
+
+.emailChange__label
+  margin: 0px auto
+
+.emailChange__input-name
+  margin: 0px 0px 5px
+  @include text-16B
+  color: #000
+  width: 100%
+
+.emailChange__input
+  @include text-16B
+  color: #000
+  width: 100%
+  height: 46px
+  margin: 0
+  margin-top: 6px
+  margin-bottom: 20px
+  border: 1px solid #71717A
+  border-radius: 5px
+  background: transparent
+  padding: 12px
+
+.emailChange__text-error
+  @include text-12
+  color: #F93326
+
+
+@media screen and (max-width: 830px)
+  .emailChangeModal
+    padding: 0 25px
+
+@media screen and (max-width: 600px)
+  .emailChangeModal__modal
+    flex-direction: column
+    max-height: 510px
+    padding-bottom: 30px
+    margin: auto auto

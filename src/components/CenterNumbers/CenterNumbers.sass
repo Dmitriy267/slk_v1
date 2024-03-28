@@ -1,0 +1,55 @@
+.center-numbers
+  display: flex
+  gap: 16px
+  flex-shrink: 0
+
+.center-numbers_type_column
+  flex-direction: column
+  gap: 32px
+
+.center-numbers__data-item
+  display: flex
+  flex-direction: column
+  gap: 15px
+  align-items: center
+  max-width: 193px
+
+.center-numbers__data-item-icon
+  background-size: 52px 54px
+  width: 52px
+  height: 54px
+
+.center-numbers__data-item-numb
+  color: rgba(255, 130, 39, 1)
+  font-weight: 700
+  font-size: 36px
+  line-height: 36px
+  font-style: normal
+  font-weight: 700
+  font-size: 36px
+  line-height: 36px
+
+.center-numbers__data-item-text
+  text-align: center
+  font-family: 'Nunito'
+  font-style: normal
+  font-weight: 500
+  font-size: 16px
+  line-height: 22px
+
+@media screen and (max-width: 1024px)
+  .center-numbers
+    justify-content: center
+
+  .center-numbers__data-item
+    max-width: 168px
+
+@media screen and (max-width: 955px)
+  .center-numbers__data-item
+    max-width: 148px
+
+@media screen and (max-width: 700px)
+  .center-numbers
+    flex-direction: column
+    align-items: center
+

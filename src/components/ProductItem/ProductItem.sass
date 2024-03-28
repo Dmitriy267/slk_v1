@@ -1,0 +1,165 @@
+@import "../../styles/@mixins"
+
+.product-page__top-block
+    margin-top: 63px
+
+.product-page__top-block
+    padding-bottom: 58px
+
+.product__contain
+    display: grid
+    grid-template-columns: 610px 1fr
+    grid-template-rows: 60px repeat(2, 1fr) 50px
+    grid-column-gap: 20px
+    grid-row-gap: 0px
+    padding: 40px 48px
+    margin-bottom: 96px
+    background: #F9FAFB
+    border-radius: 10px
+
+.product__title-block
+    grid-area: 1 / 1 / 2 / 2
+
+.product__title
+    @include heading-h2
+    margin-bottom: 24px
+
+.product__text-block
+    grid-area: 2 / 1 / 4 / 2
+
+.product__price
+    @include heading-h2
+    color: #FF8227
+    margin-bottom: 6px
+
+.product__amount
+    @include text-14M
+    margin-bottom: 28px
+
+.product__paragraph
+    @include heading-h3R
+    padding-bottom: 76px
+
+.product__contain-button
+    grid-area: 4 / 1 / 5 / 2
+    display: flex
+    gap: 14px
+
+.product__button 
+    background: #FF8227
+    border-radius: 8px
+    border: none
+    width: 77px
+    height: 50px
+    color: rgba(255, 255, 255, 1)
+    transition: 0.3s
+    padding: 0 10px 0
+
+.product__like-button 
+    margin: auto
+    background-image: url('./like_white.svg')
+    background-size: cover
+    width: 31px
+    height: 26px
+
+.product__button:active
+  background: transparent
+  border-radius: 8px
+  border: 2px solid #FF8227
+  width: 77px
+  height: 50px
+  color: rgba(255, 255, 255, 1)
+  transition: 0.3s
+
+.product__button:active .product__like-button 
+  background-image: url('./like.svg')
+
+.product__button:hover
+  background: rgba(249, 51, 38, 1)
+
+.product__contain-main
+    display: flex
+
+.product__article
+    padding-right: 65px
+
+.product__image-block
+    grid-area: 1 / 2 / 5 / 3
+
+.product__image
+    border-radius: 10px
+    float: right
+    width: 395px
+    height: 405px
+
+.product__text-block
+  display: flex
+  flex-direction: column
+
+@media screen and (max-width: 1200px)
+    .product__container
+        padding: 0
+
+    .product__contain
+        grid-template-columns: 50% 1fr
+        padding-right: 30px
+        padding-left: 30px
+        border-radius: 0 
+
+    .product-page__top-block
+        padding-right: 30px
+        padding-left: 30px
+
+    .product__paragraph
+        @include text-16R
+
+    .product__button 
+        width: 60px
+
+@media screen and (max-width: 720px)
+    .product__container
+        padding: 29px 32px 0 32px
+
+    .product__contain
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 36px 350px 1fr 140px
+        grid-column-gap: 0
+        grid-row-gap: 24px
+        background: transparent
+        padding: 0
+
+    .product__title-block
+        grid-area: 1 / 1 / 2 / 3
+
+    .product__image-block
+        grid-area: 2 / 1 / 3 / 3
+        display: flex
+        justify-content: center
+
+    .product__text-block
+        grid-area: 3 / 1 / 4 / 3
+
+    .product__contain-button
+        grid-area: 4 / 1 / 5 / 3
+        flex-direction: column-reverse
+        gap: 40px
+
+    .product-page__top-block
+        padding: 0 0 24px 0
+        margin: 0
+
+    .product__article
+        padding: 0
+        width: 100%
+
+    .product__paragraph
+        white-space: pre-wrap
+        padding-bottom: 24px
+
+    .product__button 
+        width: 113px
+
+@media screen and (max-width: 320px)
+    .product__contain
+        grid-template-rows: 36px 250px 1fr 140px
+

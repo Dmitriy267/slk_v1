@@ -1,0 +1,84 @@
+@import "../../../styles/@mixins"
+
+.fund-chart
+  display: flex
+  flex-direction: column
+  height: 60px
+  width: 100%
+  margin-bottom: 24px
+  gap: 10px
+
+.fund-chart__amounts
+  display: flex
+  flex-wrap: nowrap
+  justify-content: space-between
+
+.fund-chart__charts
+  display: flex
+  flex-wrap: nowrap
+
+.fund-chart__current
+  position: relative
+  border-top: 2px solid #F93326
+  border-right: 2px solid #F93326
+  height: 11px
+
+.fund-chart__current_type_bold
+  border-top: 7px solid #F93326
+  border-right: 7px solid #F93326
+  height: 20px
+
+.fund-chart__star
+  background-image: url('../../../assets/icons/star.svg')
+  background-position: center
+  background-repeat: no-repeat
+  width: 32px
+  height: 32px
+  right: -16px
+  position: absolute
+  display: inline-block
+
+.fund-chart__star_type_bold
+  right: -19px
+  top: 5px
+  background-image: url('../../../assets/icons/star-big.svg')
+
+.fund-chart__needed
+  border-top: 2px solid #FFD43C
+  flex-grow: 1
+
+.fund-chart__needed_type_bold
+  border-top: 7px solid #FFD43C
+
+.fund-chart__amount
+  @include text-18
+  color: #FF8227
+  font-weight: 600
+  font-size: 18px
+  line-height: 100%
+
+
+.fund-chart__amount_type_big
+  @include text-18
+  color: #FF8227
+  font-weight: 700
+  font-size: 26px
+  line-height: 100%
+
+@media screen and  (max-width: 500px)
+  .fund-chart__current_type_bold
+    border-top: 2px solid #F93326
+    border-right: 2px solid #F93326
+    height: 20px
+
+  .fund-chart__needed_type_bold
+    border-top: 2px solid #FFD43C
+
+  .fund-chart__star_type_bold
+    right: -17px
+
+  .fund-chart__amount_type_big
+    font-weight: 600
+    font-size: 18px
+
+

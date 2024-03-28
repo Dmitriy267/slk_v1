@@ -1,0 +1,101 @@
+@import "../../styles/@mixins"
+
+.cookies
+  max-width: 1200px
+  width: 100%
+  min-height: 64px
+  background: #FF8227
+  border-radius: 10px
+  position: fixed
+  display: none
+  z-index: 1000
+  bottom: 28px
+  padding: 0 45px
+  align-items: center
+  justify-content: center
+  box-sizing: border-box
+
+.cookies_status_opened
+  display: flex
+
+.cookies__icon
+  background-image: url('../../assets/icons/cookies.svg')
+  background-size: 37px 37px
+  min-width: 37px
+  height: 37px
+  
+
+.cookies__text
+  display: inline
+  margin-left: 21px
+  max-width: 734px
+  color: white
+
+.cookies__btn-wrapper
+  width: 187px
+
+.cookies__link
+  color: rgba(255, 212, 60, 1)
+
+.cookies__accept-button
+  background: #FFFFFF
+  border-radius: 8px
+  border: none
+  height: 38px
+  width: 184px
+  color: #FF8227
+  transition: 0.3s
+  font-weight: 700
+  font-size: 18px
+  line-height: 22px
+  padding: 0 10px 0
+  white-space: nowrap
+  box-sizing: border-box
+
+.cookies__accept-button:hover
+  background: #F93326
+  color: white
+
+@media screen and (max-width: 1100px)
+  .cookies
+    padding: 0 25px
+    max-width: 1000px
+    align-self: center
+  .cookies__text
+    max-width: 600px
+
+@media screen and (max-width: 800px)
+  .cookies
+    justify-content: space-between
+
+  .cookies__text
+    margin:0
+    @include text-12
+    max-width: 400px
+
+  .cookies__icon
+    background-size: 25px 25px
+    min-width: 25px
+    height: 25px
+
+@media screen and (max-width: 700px)
+  .cookies__icon
+    display: none
+
+@media screen and (max-width: 700px)
+  .cookies
+    flex-direction: column
+    gap: 15px
+    height: fit-content
+    padding: 15px 15px 30px
+    box-sizing: border-box
+    min-width: 320px
+    width: 100%
+    bottom: 0
+    border-radius: 0
+
+@media screen and (max-width: 450px)
+
+
+
+

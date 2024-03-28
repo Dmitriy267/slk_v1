@@ -1,0 +1,53 @@
+@import '../../../styles/@mixins'
+
+.accountItem
+  margin: 0px
+  width: 625px
+  border-bottom: 1px solid #71717A
+  display: grid
+  grid-template-columns: 120px auto 95px
+
+.accountItem__date
+  @include text-16B
+
+.accountItem__status
+  @include text-16B
+
+.accountItem__status_red
+  color: #F93326
+
+.accountItem__goods
+  display: flex
+  flex-direction: column
+  margin: 0px
+  margin-left: 20px
+
+.accountItem__good
+  display: flex
+  margin: 0px
+  margin-bottom: 20px
+
+.accountItem__good_info
+  margin: 0px
+  margin-left: 30px
+  display: flex
+  flex-direction: column
+  row-gap: 10px
+
+.accountItem__good_info-wd
+  width: 205px
+
+.accountItem__good_info-end
+  align-items: flex-end
+
+.accountItem__text
+  margin: 0px
+  @include text-16M
+
+
+@media screen and (max-width: 700px)
+  .accountItem
+    width: 280px
+    display: flex
+    flex-direction: column
+

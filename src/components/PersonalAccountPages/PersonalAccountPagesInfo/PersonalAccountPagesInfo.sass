@@ -1,0 +1,235 @@
+@import "../../../styles/@mixins"
+
+.account__section
+  margin: 0px
+  margin-bottom: 128px
+  width: 100%
+
+.accountInfo__form
+  margin: 0px auto
+  display: flex
+  column-gap: 25px
+  row-gap: 30px
+  background: #F9FAFB
+  border-radius: 10px
+  flex-wrap: wrap
+  padding: 40px 100px
+  width: 996px
+
+.accountInfo__form__avatar-conteiner
+  position: relative
+  margin: 0px
+  width: 100%
+  display: flex
+
+.accountInfo__form__upload-input
+  margin: 0px
+  visibility: hidden
+  max-width: 1px
+
+.accountInfo__form__avatar
+  margin: 0px
+  width: 90px
+  height: 90px
+  border-radius: 45px
+  background-color: #D9D9D9
+  background-image: url('../../../assets/icons/photo.svg')
+  background-size: 20px 18px
+  background-position: center
+  background-repeat: no-repeat
+
+.accountInfo__avatar
+  margin: 0px
+  width: 90px
+  height: 90px
+  border-radius: 45px
+
+.accountInfo__form__avatar-tooltip
+  display: flex
+  flex-direction: column
+  top: 0 !important
+  left: 110px !important
+  border: 1px solid var(--grey-2)
+  border-radius: 8px
+  padding: 22px 10px
+  text-align: start
+  color: var(--black)
+  background: var(--grey-1)
+  button
+    padding-right: 5px
+    padding-left: 30px
+    transition: color .3s ease-in-out, background .3s ease-in-out
+
+.accountInfo__form__avatar_not-selected
+  top: 15% !important
+
+.accountInfo__form__avatar-tooltip-arrow
+  width: 16px
+  height: 16px
+  top: 40% !important
+  left: -9px !important
+  border-bottom: 1px solid #71717A
+  border-left: 1px solid #71717A
+
+.accountInfo__form__avatar-buttonDownload
+  margin: 0px
+  @include text-14R
+  color: #000
+  background-color: transparent
+  background-image: url('../../../assets/icons/img.svg')
+  background-repeat: no-repeat
+
+.accountInfo__form__avatar-buttonDownload:hover
+  color: #F93326
+  background-image: url('../../../assets/icons/img-red.svg')
+
+
+.accountInfo__form__avatar-buttonBusket
+  margin: 0px
+  padding-top: 8px
+  @include text-14R
+  color: #000
+  background-color: transparent
+  background-image: url('../../../assets/icons/busket.svg')
+  background-repeat: no-repeat
+  background-position: 0 65%
+
+
+.accountInfo__form__avatar-buttonBusket:hover
+  color: #F93326
+  background-image: url('../../../assets/icons/busket-red.svg')
+
+
+
+.accountInfo__label
+  margin: 0px
+  display: flex
+  flex-direction: column
+  color: #232323
+  white-space: nowrap
+  position: relative
+
+.accountInfo__input-name
+  @include text-16M
+  color: #000
+
+.accountInfo__input
+  @include text-16B
+  color: #000
+  width: 247px
+  height: 46px
+  margin: 0
+  margin-top: 6px
+  border: 1px solid #71717A
+  border-radius: 5px
+  background: transparent
+  padding: 12px
+
+.accountInfo__input::placeholder
+ @include text-12
+
+.accountInfo__input_type_middle
+  width: 384px
+
+.accountInfo__text-error
+  @include text-12
+  color: #F93326
+
+
+.accountInfo__form__submit
+  margin: 0px
+  width: 100%
+  display: flex
+  justify-content: center
+
+.accountInfo__button-submit
+  width: 281px
+  height: 48px
+  background: none
+  border: 2px solid #FF8227
+  border-radius: 8px
+  padding: 13px 55px
+  color: #FF8227
+  @include text-18
+
+
+.accountInfo__button-submit:disabled
+  color: #CDCDCD
+  border: 2px solid #CDCDCD
+
+.accountInfo__button-submit:hover
+  color: #F93326
+  border: 2px solid #F93326
+
+.accountInfo__button-submit:disabled:hover
+  color: #CDCDCD
+  border: 2px solid #CDCDCD
+
+.accountInfo__button-submit:active
+  color: #F8F8F8
+  background: #FF8227
+
+
+.accountChangePassword__form
+  margin: 0px auto
+  display: flex
+  flex-direction: column
+  column-gap: 25px
+  row-gap: 30px
+  background: #F9FAFB
+  border-radius: 10px
+  flex-wrap: wrap
+  padding: 40px 100px
+  width: 996px
+
+.accountChangePassword__form__title
+  @include text-16B
+  margin: 0px
+
+.accountChangePassword__form__block
+  margin: 0px
+  display: flex
+  column-gap: 25px
+
+
+@media screen and (max-width: 1000px)
+  .accountInfo__form
+    padding: 40px 40px
+    width: 600px
+
+  .accountChangePassword__form
+    padding: 40px 40px
+    width: 600px
+
+  .accountChangePassword__form__block
+    flex-direction: column
+    row-gap: 25px
+
+@media screen and (max-width: 600px)
+  .accountInfo__form
+    padding: 20px 20px
+    width: 450px
+
+  .accountChangePassword__form
+    padding: 20px 20px
+    width: 450px
+
+  .accountInfo__input
+    width: 384px
+
+
+@media screen and (max-width: 450px)
+  .accountInfo__form
+    padding: 20px 20px
+    width: 300px
+
+  .accountChangePassword__form
+    padding: 20px 20px
+    width: 300px
+
+  .accountInfo__input
+    width: 250px
+
+  .accountInfo__input_type_middle
+    width: 250px
+

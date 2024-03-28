@@ -1,0 +1,111 @@
+@import "../../styles/@mixins"
+
+.about-card
+  display: flex
+  gap: 25px
+  width: 100%
+  height: 300px
+  position: relative
+
+.about-card_type_reverse
+  flex-direction: row-reverse
+
+.about-card__img-container
+  width: 587px
+  height: 100%
+  border-radius: 10px
+  overflow: hidden
+  position: relative
+  flex-shrink: 0
+
+.about-card__img
+  width: 100%
+  object-fit: cover
+  object-position: center
+
+.about-card__title
+  @include heading-h2
+  margin-bottom: 40px
+  display: -webkit-box
+  -webkit-line-clamp: 1
+  -webkit-box-orient: vertical
+  overflow: hidden
+  color: #232323
+
+.about-card__text-container
+  display: flex
+  flex-direction: column
+  box-sizing: border-box
+  align-self: center
+  height: 100%
+
+.about-card__description
+  @include text-16M
+  margin-bottom: auto
+  display: -webkit-box
+  -webkit-line-clamp: 8
+  -webkit-box-orient: vertical
+  overflow: hidden
+  color: #000
+
+@media screen and (max-width: 1100px)
+  .about-card__img-container
+    width: 455px
+    height: 300px
+  .about-card__img
+    height: 100%
+
+@media screen and (max-width: 950px)
+  .about-card__img-container
+    width: 430px
+    height: 300px
+
+@media screen and (max-width: 900px)
+  .about-card__img-container
+    width: 400px
+    height: 300px
+
+@media screen and (max-width: 850px)
+  .about-card
+    flex-direction: column-reverse
+    min-height: 630px
+    gap: 20px
+    width: 455px
+    align-self: center
+  .about-card__img-container
+    width: 100%
+  .about-card__btn-container
+    display: flex
+    justify-content: center
+
+@media screen and (max-width: 700px)
+  .about-card
+    width: 100%
+  .about-card__title
+    @include heading-h4B
+    margin-bottom: 20px
+    -webkit-line-clamp: 2
+    min-height: 52px
+  .about-card__img
+    width: none
+    height: 100%
+
+@media screen and (max-width: 500px)
+  .about-card
+    flex-direction: column-reverse
+    min-height: 710px
+    gap: 20px
+  .about-card__img-container
+    width: 100%
+    height: 300px
+  .about-card__description
+    margin-bottom: auto
+    -webkit-line-clamp: 12
+    @include text-14R
+
+
+
+
+
+
+

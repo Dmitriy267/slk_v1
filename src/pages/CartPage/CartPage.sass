@@ -1,0 +1,111 @@
+@import "../../styles/@mixins"
+.cartPage
+    margin-top: 60px
+    width: 100%
+    display: flex
+    flex-direction: column
+    gap: 40px
+    align-items: center
+
+.cartPage__btn-container
+    align-self: flex-start
+    margin-left: 31px
+.cartPage__title
+    @include heading-h2
+.cartPage__list
+    width: 100%
+    max-width: 1200px
+    margin-bottom: 48px
+
+.cartPage__result
+    width: 100%
+    max-width: 460px
+    background: #F9FAFB
+    margin: 0 30px 48px
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 10px
+    padding: 0
+
+.cartPage__result-wrapper
+    width: 100%
+.cartPage__result-count
+
+    display: flex
+    justify-content: space-between
+    color: black
+    margin: 28px 80px 0
+
+.cartPage__result-text
+    @include text-18B
+.cartPage__result-count:first-of-type
+    padding-bottom: 11px
+    border-bottom: 1px solid black
+
+.cartPage__result-count:last-of-type
+    margin: 11px 80px 28px
+
+.cartPage__delivery
+    margin-top: 26px
+    margin-bottom: 90px
+
+.cartPage__delivery-lable
+    padding-bottom: 7px
+    border-bottom: 1px solid black
+
+.cartPage__delivery-input
+    position: absolute
+    z-index: -1
+    opacity: 0
+
+.cartPage__delivery-input + .cartPage__delivery-lable
+    display: inline-flex
+    align-items: center
+    user-select: none
+    cursor: pointer
+
+    &::before
+        content: ''
+        display: inline-block
+        width: 1em
+        height: 1em
+        flex-shrink: 0
+        flex-grow: 0
+        border: 1px solid #71717A
+        margin-right: 0.5em
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: 50% 50%
+.cartPage__delivery-input:checked+label::before
+    border-color: grey2
+    background-color: #ffffff
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='grey2' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e")
+
+.cartPage__delivery-input:not(:disabled):not(:checked)+label:hover::before
+    border-color: grey2
+
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.cartPage__delivery-input:not(:disabled):active+label::before
+    background-color: grey2
+    border-color: grey2
+
+/* стили для чекбокса, находящегося в фокусе */
+// .cartPage__delivery-input:focus+label::before
+//     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25)
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.cartPage__delivery-input:focus:not(:checked)+label::before
+    border-color: grey2
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.cartPage__delivery-input:disabled+label::before
+    background-color: grey2
+
+
+@media  screen and ('max-width: 850px')
+    .cartPage__title
+        @include heading-h3
+
+    .cartPage__result-text
+        @include text-16B

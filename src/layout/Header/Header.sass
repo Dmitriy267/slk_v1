@@ -1,0 +1,133 @@
+@import '../../styles/@mixins'
+
+.header__container
+  min-width: 320px
+  max-width: 1200px
+  width: 100%
+  margin: 0 auto
+  display: flex
+  position: relative
+
+.header
+  display: flex
+  align-items: center
+  position: relative
+  margin: 0 auto 0
+  padding-bottom: 10px
+  padding-left: 30px
+  width: 100%
+  z-index: 10
+  .header__logo,
+  .home__hero-gerb,
+  .home__user-login
+    z-index: 100
+
+  .header__logo_type_link
+    cursor: pointer
+
+.home__user-login
+  position: relative
+
+.home__user-login-name
+  @include text-18B
+  position: absolute
+  line-height: 22px
+  color: var(--orange)
+  width: calc(100% - 30px)
+
+.home__user-login-svg
+  position: relative
+  margin-right: 30px
+
+.home__tooltip
+  display: flex
+  flex-direction: column
+  border: 1px solid var(--grey-2)
+  border-radius: 8px
+  width: 205px
+  top: 75px !important
+  left: 0
+  padding: 15px 0
+  text-align: start
+  color: var(--black)
+  background: var(--grey-1)
+
+.home__tooltip-arrow
+  width: 16px
+  height: 16px
+  top: -8px !important
+  left: 82px !important
+  border-top: 1px solid #71717A
+  border-left: 1px solid #71717A
+
+.home__user-login-btn
+  @include text-14R
+  width: 100%
+  padding: 5px 0
+  padding-left: 10px
+  transition: background .3s ease-in-out
+
+.home__user-login-btn:hover
+  background: rgba(255, 130, 39, 0.5)
+
+.home__hero-gerb
+  z-index: 100
+
+@media screen and ( max-width: 1200px )
+  .home__user-login-svg
+    width: 38px
+    height: 38px
+    margin-right: 0
+
+@media screen and ( max-width: 999px )
+  .header
+    padding-right: 32px
+    .header__logo
+      order: -1
+      margin-right: 0
+    .home__hero-gerb
+      order: -1
+
+  .header__profile
+    order: 0
+    margin-left: 0
+
+  .home__hero-gerb
+    order: -1
+
+  .header__logo
+    order: -2
+
+@media screen and ( max-width: 480px )
+  .header
+    align-items: baseline
+    height: 52px
+    padding-top: 5px
+    padding-right: 32px
+
+  .header_burger--opened
+    background: #fff
+
+  .header__logo
+    width: 40px
+    height: 40px
+    transform: translateY(-20%)
+
+  .home__user-login-svg
+    width: 32px
+    height: 32px
+    transform: translateY(-40%)
+
+  .home__hero-gerb
+    width: 62px
+    height: 48px
+
+  .home__hero-wrapper
+    margin-right: auto
+    .home__hero-title
+      margin-bottom: 0
+      font-size: 18px
+      line-height: 16px
+
+  .home__hero-age
+    display: none

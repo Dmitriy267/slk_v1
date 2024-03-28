@@ -1,0 +1,138 @@
+.home__section-donation
+  display: flex
+  justify-content: center
+  width: 100%
+  margin: 0 auto
+  padding: 0
+
+.home__button-wrapper
+  margin-top: 32px
+
+.home__section-donation-text
+  font-size: 24px
+  font-weight: 700
+  line-height: 36px
+  letter-spacing: 0em
+  text-align: left
+
+.home__donation-button-block
+  margin-top: 24px
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+  flex-wrap: nowrap
+  gap: 23px
+
+.home__button-donation
+  background: none
+  border: 1px solid #FF8227
+  border-radius: 8px
+  display: flex
+  height: 50px
+  color: #FF8227
+  font-weight: 700
+  font-size: 16px
+  line-height: 22px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.home__button-donation:hover
+  border: 1px solid #F93326
+  color: #F93326
+
+.home__button-donation-other
+  display: flex
+  gap: 10px
+
+.home__donation-span
+  margin: 24px 0 0
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+
+.home__donation-span
+  margin-top: 25px
+
+// .home__input::-webkit-outer-spin-button,
+// .home__input::-webkit-inner-spin-button
+//     /* display: none; <- Crashes Chrome on hover */
+//   -webkit-appearance: none
+//   margin: 0
+
+.home__input[type=number]
+  -moz-appearance: textfield
+
+.home__input
+  color: #FF8227
+  border: none
+  background-color: transparent
+  width: 40%
+  font-size: 18px
+  font-weight: 600
+  text-align: center
+
+.home__inputButton
+  width: 20px
+  height: 20px
+  font-size: 15px
+  font-weight: 600
+
+.home__inputButton_type_yes
+  color: #FF8227
+
+.home__inputButton_type_no
+  color: grey
+  opacity: 70%
+
+.home__donation-text
+  margin-right: 16px
+
+@media screen and (max-width: 1200px)
+  .home__button-wrapper
+    margin: 30px 0
+
+  .home__donation-span
+    margin: 0 auto
+    margin-top: 36px
+    justify-content: center
+
+  .home__donation-button-block
+    flex-wrap: wrap
+    gap: 20px 10px
+    justify-content: center
+    margin: 24px 0 0
+    font-family: Nunito
+    font-size: 16px
+    font-weight: 700
+    line-height: 22px
+    letter-spacing: 0em
+    text-align: left
+
+@media screen and (max-width: 1100px)
+  .home__section-donation
+    padding: 0 30px
+
+
+@media screen and (max-width: 900px)
+  .home__section-donation-text
+    font-size: 18px
+    line-height: 21.82px
+
+@media screen and (max-width: 409px)
+  .home__section-donation
+    margin-top: 0px
+
+  .home__donation-button-block .button-main
+    max-width: 256px
+
+  .home__button-donation
+    width: 80px !important
+
+  .home__donation-text
+    font-size: 14px
+    line-height: 19px
+
+  .home__button-donation-other
+    width: 158px !important
+    padding: 0 22px

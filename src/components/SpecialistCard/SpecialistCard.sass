@@ -1,0 +1,76 @@
+@import "../../styles/@mixins"
+
+.employee-card
+  margin: 0
+  overflow: hidden
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  width: 251px
+
+.employee-card__foto
+  width: 100%
+  object-fit: cover
+  height: 260px
+  border-radius: 10px
+
+.employee-card__name
+  margin: 16px 0 8px
+  @include text-16B
+  color: #232323
+
+.employee-card__position
+  @include text-16R
+  padding-bottom: 8px
+  color: #232323
+  font-weight: 500
+
+.employee-card__button
+  @include text-16M
+  color: #FF8227
+  border-bottom: 1px solid #FFD43C
+  width: fit-content
+
+.employee-card__direction
+  margin: 8px 0
+  @include text-16R
+
+.employee-card__tel
+  @include text-16M
+
+@media screen and (max-width: 1150px)
+  .employee-card
+    width: 300px
+
+  .employee-card__foto
+    height: 332px
+
+@media screen and (max-width: 999px)
+  .employee-card
+    width: 250px
+
+  .employee-card__foto
+    height: 260px
+
+@media screen and (max-width: 900px)
+  .employee-card
+    width: 327px
+
+  .employee-card__foto
+    height: 336px
+
+@media screen and (max-width: 700px)
+  .employee-card
+    width: 325px
+
+  .employee-card__foto
+    height: 336px
+
+@media screen and (max-width: 415px)
+  .employee-card
+    width: 256px
+
+  .employee-card__foto
+    height: 266px
+
+
