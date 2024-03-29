@@ -1,0 +1,41 @@
+.person__div {
+  margin-bottom: 45px;
+  margin-top: 0px;
+  height: 70px;
+  width: 650px;
+}
+.infoPersonData {
+  margin-top: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: orange;
+  &:hover {
+    border-bottom: 2px solid orange;
+    padding-bottom: 4px;
+  }
+}
+
+.p {
+  margin-bottom: 8px;
+}
+.formaDiv {
+  height: 226px;
+  width: 298px;
+  // border: 1px solid black;
+}
+
+@media (max-width: 560px) {
+  .person__div {
+    height: 100px;
+    width: 560px;
+    margin-bottom: 15px;
+  }
+  .infoPersonData {
+    width: 445px;
+  }
+  .p {
+    width: 460px;
+  }
+}

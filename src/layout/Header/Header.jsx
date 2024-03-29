@@ -79,16 +79,12 @@ export const Header = () => {
   }, [profile]);
 
   useEffect(() => {
-    const userInfo = localStorage.getItem
-  }, [])
+    const userInfo = localStorage.getItem;
+  }, []);
 
   return (
     <div className="header__container">
-      <header
-        className={`header ${
-          burgerOpened ? 'header_burger--opened' : ''
-        }`}
-      >
+      <header className={`header ${burgerOpened ? 'header_burger--opened' : ''}`}>
         {location.pathname == '/' ? (
           <img className="header__logo" src={logo} alt="логотип" />
         ) : (
@@ -115,8 +111,9 @@ export const Header = () => {
           <p className="home__user-login-name">{isLoggedIn ? profileName : ''}</p>
           <UserLoginToolkit isLoged={isLoggedIn} />
         </button> */}
+        {/* Убираем логотип Тольятти
 
-        <img className="home__hero-gerb" src={gerb} alt="герб Тольятти" />
+        <img className="home__hero-gerb" src={gerb} alt="герб Тольятти" /> */}
 
         {isTablet && (
           <BurgerMenu

@@ -1,0 +1,76 @@
+.textH1 {
+  font-family: Exo2;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 12px;
+  margin-top: 48px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.titileP {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+}
+.block {
+  margin-left: 20px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  height: auto;
+}
+.type__ol {
+  list-style: decimal;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+.firstOl {
+  margin-top: 16px;
+  li {
+    margin-bottom: 16px;
+  }
+}
+
+.ulFirst {
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+.ulSecond {
+  li {
+    margin-bottom: 16px;
+  }
+}
+
+.h3 {
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.pBottom {
+  margin-top: 16px;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .textH1,
+  .titileP,
+  .h3,
+  .pBottom {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .textH1,
+  .titileP,
+  .h3,
+  .pBottom {
+    font-size: 18px;
+  }
+}

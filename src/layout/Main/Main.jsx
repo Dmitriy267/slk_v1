@@ -7,13 +7,15 @@ import About from '../../pages/About/About';
 import { Contacts } from '../../pages/Contacts/Contacts';
 import Help from '../../pages/Help/Help';
 import { CookiesAccept } from '../../components/CookiesAccept/CookiesAccept';
-import { Projects } from '../../pages/Projects/Projects'
-import { Partners } from '../../pages/Partners/Partners'
+import { Projects } from '../../pages/Projects/Projects';
+import { Partners } from '../../pages/Partners/Partners';
 import { News } from '../../pages/News/News';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { CookiesPolicy } from '../../pages/CookiesPolicy/CookiesPolicy';
 import { NotFoundPage } from '../../pages/NotFoundPage/NotFoundPage';
+import { PersonalData } from '../../pages/PersonalData/PersonalData';
+import { OffertPage } from '../../pages/OffertPage/OffertPage';
 // import { CartPage } from '../../pages/CartPage/CartPage';
 // import AuthPage from '../../pages/AuthPage/AuthPage';
 // import RegistrationPage from '../../pages/RegistrationPage/RegistrationPage';
@@ -25,7 +27,7 @@ import { NotFoundPage } from '../../pages/NotFoundPage/NotFoundPage';
 
 export const Main = () => {
   // Отслеживаем url
-  const {pathname} = useLocation();
+  const { pathname } = useLocation();
 
   // Каждый раз при именение url перемещаемся в начало страницы
   useEffect(() => {
@@ -36,8 +38,8 @@ export const Main = () => {
     });
   }, [pathname]);
 
-  return(
-    <main className='main'>
+  return (
+    <main className="main">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route exact path="/about/*" element={<About />} />
@@ -46,10 +48,12 @@ export const Main = () => {
         <Route exact path="/projects/*" element={<Projects />} />
         <Route exact path="/partners" element={<Partners />} />
         <Route exact path="/news/*" element={<News />} />
-        <Route path='/*' element={<NotFoundPage/>} />
+        <Route path="/*" element={<NotFoundPage />} />
         <Route exact path="/agreement" element={<Agreement />} />
         <Route exact path="/cookies-policy" element={<CookiesPolicy />} />
- 
+        {/* //Добавим страницу полити персональных данных и оферту*/}
+        <Route path="/personalData" element={<PersonalData />} />
+        <Route path="/offert" element={<OffertPage />} />
 
         {/* <Route exact path="/shop/*" element={<Shop />} />
         <Route exact path='/cart-page' element={<CartPage/>} />
@@ -60,10 +64,9 @@ export const Main = () => {
         <Route element={<PrivateRoutes />}>
           <Route exact path="/account/*" element={<PersonalAccount />} />
         </Route> */}
-
       </Routes>
 
       <CookiesAccept />
     </main>
-  )
-}
+  );
+};

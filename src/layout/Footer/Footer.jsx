@@ -2,6 +2,8 @@ import React from 'react';
 import './Footer.sass';
 import { MapYandex } from '../../components/MapYandex/MapYandex';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import styles from './Footer.module.scss';
 
 export const Footer = () => {
   const contacts = useSelector((state) => state.contactsPage.data);
@@ -23,9 +25,10 @@ export const Footer = () => {
             <p className="footer__titlet">центр для особых детей</p>
             <p className="footer__titleb">«солнечный круг»</p>
           </div>
+          {/* Скроем логотип Тольятти
           <div className="footer__logo">
             <div className="footer__gerb" />
-          </div>
+          </div> */}
         </div>
         <div className="footer__content">
           <nav className="footer__nav">
@@ -37,7 +40,12 @@ export const Footer = () => {
               </li>
               <li className="footer__item">
                 <a href="/help" className="footer__link">
-                  Помощь
+                  Способы помощи
+                </a>
+              </li>
+              <li className="footer__item">
+                <a href="/news" className="footer__link">
+                  Новости
                 </a>
               </li>
               <li className="footer__item">
@@ -51,8 +59,12 @@ export const Footer = () => {
                 </a>
               </li> */}
               <li className="footer__item">
-                <a href="/partners" className="footer__link">
+                {/* <a href="/partners" className="footer__link">
                   Партнеры
+                </a> */}
+
+                <a href="/help/reports" className="footer__link">
+                  Отчеты
                 </a>
               </li>
               <li className="footer__item">
@@ -90,16 +102,41 @@ export const Footer = () => {
                 </a>
               </li>
               <li className="footer__contactitem">
-                <a href="https://vk.com/slkrug" className="footer__vk" target="_blank" rel="noreferrer">
+                <a
+                  href="https://vk.com/slkrug"
+                  className="footer__vk"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <div className="footer__vk"></div>
                 </a>
               </li>
             </ul>
           </address>
-          <div className="footer__maps">
+          {/* Скроем карту, вместо нее форма подписки
+           <div className="footer__maps">
             <MapYandex width="100%" height="100%" />
+          </div>  */}
+          {/* Тут форма подписки 
+          {<div className={styles.formaDiv}></div>} */}
+        </div>
+        {/* //Добавляем информацию о политике безопасности и персональных данных */}
+        <div className={styles.person__div}>
+          <p>Политика безопасности</p>
+          <div className={styles.infoPersonData}>
+            <p className={styles.p}>
+              Совершая пожертвование, пользователь принимает условия публичной{' '}
+              <Link to="/offert" target="_blank" className={styles.link}>
+                оферты
+              </Link>
+            </p>
+
+            <Link to="/personalData" target="_blank" className={styles.link}>
+              Политика обработки персональных данных
+            </Link>
           </div>
         </div>
+        {/* //Конец информации о политике безопасности и персональных данных */}
         <div className="footer__bottom">
           <ul className="footer__listcopyr">
             <li className="footer__copyritem">
